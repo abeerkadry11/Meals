@@ -1,0 +1,110 @@
+
+:root {
+    --main-bg-color: #0d0d0d;
+}
+
+
+
+body {
+    background-color: #dbad15;
+    color: white
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i, a {
+    cursor: pointer;
+}
+
+
+.navv {
+    background-color: white;
+    z-index: 3;
+
+    .navvContent {
+        background-color: #dbad15;
+        .links ul li {
+            padding: 8px 0;
+            cursor: pointer;
+            transition: all 0.4s;
+            &:hover {
+                color: #ECCEAE;
+                transform: translateX(10px);
+            }
+        }
+    }
+    .navvHeader {
+        background-color: #ffffff;
+
+        .logo img {
+            width: 50px;
+            cursor: pointer;
+        }
+    }
+}
+
+/** END SIDE NAVBAR*/
+
+  .meals img {
+    transition: all .5s;
+    
+  }
+  .meal-card:hover img {
+    transform: scale(1.1);
+  }
+  .meals .meal-card-layer {
+    height: 100%;
+    width: 100%;
+    background-color:rgba(255, 255, 255,0.7);
+    color: #0d0d0d;
+    top: 100%;
+    left: 0px;
+    transition: all 0.4s;
+  }
+  .meal-card:hover .meal-card-layer {
+    top: 0;
+  }
+ 
+  
+  
+
+  .search .form-control {
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid #13120b;
+    border-radius: 20px;
+  }
+  .search .form-control::placeholder {
+    color: #fff;
+  }
+  .search .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 0 transparent;
+ 
+  }
+ 
+
+  /*^ loading-screen Style */
+  
+  .myData {
+    z-index: 2;
+    background-color: rgb(62, 65, 65);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loading-screen {
+    z-index: 4;
+    background-color:rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!-- FONTAWESOME FILE -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- BOOTSTRAP FILE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+<body>
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <!--   start sidebar -->
+    <div class="navv position-fixed min-vh-100 d-flex top-0">
+        <div class="navvContent d-flex flex-column justify-content-between vh-100 p-4">
+            <div class="links overflow-hidden">
+                <ul class="list-unstyled text-capitalize">
+                    <li onclick="showSearchInputs()" class="position-relative  ">Search</li>
+                    <li onclick="getCategories()" class="position-relative">Categories</li>
+                    <li onclick="getArea()" class="position-relative">Area</li>
+                    <li onclick="getIngredients()" class="position-relative">Ingredients</li>
+                    <li onclick="showContactUs()" class="position-relative">contact Us</li>
+                </ul>
+            </div>
+            <div class="navvFooter">
+                <div class="icons mb-2">
+                    <span>
+                        <i class="fa-brands fa-facebook fa-xl me-2"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-twitter fa-xl me-2"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-globe fa-xl"></i>
+                    </span>
+                </div>
+                <p class="m-0">Copyright Â© 2019 All Rights <br />Reserved.</p>
+            </div>
+        </div>
+        <div class="navvHeader text-center d-flex flex-column justify-content-between py-4 px-2">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="open-close-icons">
+                <span class="open-close d-block"><i class="fa-openClose fa-solid fa-bars fa-2x text-black"></i></span>
+                <span class="open-close close d-none"><i class="fa-solid fa-xmark fa-2x  text-black"></i></span>
+            </div>
+            <div class="header-icons">
+                <span class="d-block mb-3"><i class="fa-solid fa-globe text-black d-block m-auto mb-2 fa-xl"></i></span>
+                <span><i class="fa-solid fa-share-nodes  text-black fa-xl"></i></span>
+            </div>
+        </div>
+    </div>
+     <!-- end sidebar -->
+
+    <!-- search-->
+    <section class="search">
+        <div class="container w-75" id="searchContainer"></div>
+    </section>
+    <!-- end search -->
+    
+
+    <section class="meals min-vh-100 position-relative">
+        <div class="myData top-0 start-0 bottom-0 end-0">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <div class="container">
+            <div class="instructions">
+                <div class="row py-5 g-4" id="rowData"></div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
